@@ -11,9 +11,9 @@ public class GooTests {
     public void goToGoo(){
         open("https://www.rozetka.com.ua");
         GooSteps gooSteps = new GooSteps();
-        //GooElements gooElements = new GooElements();
-        gooSteps.goToGooMetod();
-        System.out.println(GooElements.searchRezult.getText());
+        GooElements gooElements = new GooElements();
+        gooSteps.goToGooMetod("6547");
+        System.out.println(gooElements.searchRezult.getText());
 
     }
 }
