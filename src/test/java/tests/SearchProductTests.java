@@ -1,6 +1,6 @@
 package tests;
 
-import elements.selectProductAndResult;
+import elements.SelectProductAndResult;
 import org.testng.annotations.Test;
 import steps.SearchSteps;
 
@@ -11,7 +11,7 @@ public class SearchProductTests {
     public void searchProductAndShowResult(){
         open("https://www.rozetka.com.ua");
         SearchSteps gooSteps = new SearchSteps();
-        selectProductAndResult gooElements = new selectProductAndResult();
+        SelectProductAndResult gooElements = new SelectProductAndResult();
         gooSteps.rozetkaSearchProductStep("phone");
         System.out.println(gooElements.resultOfSearch.getText());
 
