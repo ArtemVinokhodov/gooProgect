@@ -11,9 +11,9 @@ public class SearchProductTests {
     public void searchProductAndShowResult(){
         open("https://www.rozetka.com.ua");
         SearchSteps gooSteps = new SearchSteps();
-        SelectProductAndResult gooElements = new SelectProductAndResult();
+        //SelectProductAndResult gooElements = new SelectProductAndResult();
         gooSteps.rozetkaSearchProductStep("phone");
-        System.out.println(gooElements.resultOfSearch.getText());
+        System.out.println(SelectProductAndResult.resultOfSearch.getText());
 
     }
 }
